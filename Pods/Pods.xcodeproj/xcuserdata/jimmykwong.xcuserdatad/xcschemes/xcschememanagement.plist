@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-Project LightBringers.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Pods-Project LightBringersTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Pods-Project LightBringersUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>PubNub.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>21C9D4302D24C34C2912191DB5044897</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>28C4A2E61CB1CBBD4BF4D001E5539ED0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A85C4752438BC71BD72DE95CF06B4D1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>59AD5B97303A1B5AA343F14B428EB088</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E0EA204E2640DEFF9268E01699B237F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6725ECFB8E3CD43E9AE93F51F4FDF8F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A173CC93267A0620808C3040D70D0658</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

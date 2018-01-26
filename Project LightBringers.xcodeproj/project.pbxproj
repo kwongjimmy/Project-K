@@ -1,0 +1,1050 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		170C48651E32EB660049A069 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170C48641E32EB660049A069 /* AppDelegate.swift */; };
+		170C48691E32EB660049A069 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 170C48681E32EB660049A069 /* Actions.sks */; };
+		170C486D1E32EB660049A069 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170C486C1E32EB660049A069 /* GameViewController.swift */; };
+		170C48701E32EB660049A069 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170C486E1E32EB660049A069 /* Main.storyboard */; };
+		170C48721E32EB660049A069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 170C48711E32EB660049A069 /* Assets.xcassets */; };
+		170C48801E32EB660049A069 /* Project_LightBringersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170C487F1E32EB660049A069 /* Project_LightBringersTests.swift */; };
+		170C488B1E32EB660049A069 /* Project_LightBringersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170C488A1E32EB660049A069 /* Project_LightBringersUITests.swift */; };
+		7FA87DA4A08A03117C770B3F /* libPods-Project LightBringers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DBA11D90118C8807481982 /* libPods-Project LightBringers.a */; };
+		930B415D1E8079C800FA301A /* LB_Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930B415C1E8079C800FA301A /* LB_Enemy.swift */; };
+		93215CD21E34467900367C44 /* LB_Being.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93215CC81E34467900367C44 /* LB_Being.swift */; };
+		93215CD31E34467900367C44 /* LB_Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93215CC91E34467900367C44 /* LB_Player.swift */; };
+		93215CD41E34467900367C44 /* LB_PlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93215CCA1E34467900367C44 /* LB_PlayerNode.swift */; };
+		93215CD51E34467900367C44 /* LB_BattleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93215CCC1E34467900367C44 /* LB_BattleScene.swift */; };
+		93215CD61E34467900367C44 /* LB_LaunchScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93215CCD1E34467900367C44 /* LB_LaunchScene.swift */; };
+		93215CD81E34467900367C44 /* LB_Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93215CD11E34467900367C44 /* LB_Spell.swift */; };
+		93215D001E36C52000367C44 /* LB_BattleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93215CFE1E36C52000367C44 /* LB_BattleScene.sks */; };
+		93215D011E36C52000367C44 /* LB_LaunchScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93215CFF1E36C52000367C44 /* LB_LaunchScene.sks */; };
+		93215E151E39A20100367C44 /* LB_SpellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93215E141E39A20100367C44 /* LB_SpellNode.swift */; };
+		93215E171E39A9D900367C44 /* LB_SpellSlotNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93215E161E39A9D900367C44 /* LB_SpellSlotNode.swift */; };
+		93215E191E39AFE300367C44 /* LB_SpellRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93215E181E39AFE300367C44 /* LB_SpellRing.swift */; };
+		93215E1B1E39C30A00367C44 /* LB_SpellRingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93215E1A1E39C30A00367C44 /* LB_SpellRingController.swift */; };
+		933F0CFF1E864C5300657312 /* LB_EnemyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F0CFE1E864C5300657312 /* LB_EnemyNode.swift */; };
+		933FF84D1E93574B00BA3D75 /* enemy_fw.png in Resources */ = {isa = PBXBuildFile; fileRef = 933FF8451E93574B00BA3D75 /* enemy_fw.png */; };
+		933FF84F1E93574B00BA3D75 /* enemy_iw.png in Resources */ = {isa = PBXBuildFile; fileRef = 933FF8481E93574B00BA3D75 /* enemy_iw.png */; };
+		933FF8511E93574B00BA3D75 /* enemy_pw.png in Resources */ = {isa = PBXBuildFile; fileRef = 933FF84B1E93574B00BA3D75 /* enemy_pw.png */; };
+		933FF8561E93587D00BA3D75 /* enemy_pw_idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 933FF8551E93587D00BA3D75 /* enemy_pw_idle.atlas */; };
+		933FF85A1E93596000BA3D75 /* enemy_iw_idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 933FF8591E93596000BA3D75 /* enemy_iw_idle.atlas */; };
+		933FF85C1E93596700BA3D75 /* enemy_fw_idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 933FF85B1E93596700BA3D75 /* enemy_fw_idle.atlas */; };
+		935587391EC6CD8C00B4AA3B /* spellicon.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 935587381EC6CD8C00B4AA3B /* spellicon.atlas */; };
+		9355873B1ECC1D3500B4AA3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9355873A1ECC1D3500B4AA3B /* LaunchScreen.storyboard */; };
+		9355873D1ED7CCFB00B4AA3B /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9355873C1ED7CCFB00B4AA3B /* background.png */; };
+		9377E93E1E9D7D7F0015287A /* LB_ActionEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9377E93D1E9D7D7F0015287A /* LB_ActionEvent.swift */; };
+		9377E9471EA196FB0015287A /* circle2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9377E9461EA196FB0015287A /* circle2.png */; };
+		93813CCA1E85BF21000E592F /* LB_Collision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93813CC91E85BF21000E592F /* LB_Collision.swift */; };
+		93E51A461E4BE3A30020FAE0 /* Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 93E51A451E4BE3A30020FAE0 /* Walk.atlas */; };
+		93EEFC5B1EB2BF7700CCAABB /* LB_Ailment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEFC5A1EB2BF7700CCAABB /* LB_Ailment.swift */; };
+		93EEFC6C1EB2D92F00CCAABB /* LB_BattleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEFC6A1EB2D92F00CCAABB /* LB_BattleManager.swift */; };
+		93EEFC6D1EB2D92F00CCAABB /* LB_BattleStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEFC6B1EB2D92F00CCAABB /* LB_BattleStateMachine.swift */; };
+		93EEFC881EC10B0900CCAABB /* LB_Level_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEFC7D1EC10B0900CCAABB /* LB_Level_1.swift */; };
+		93EEFC891EC10B0900CCAABB /* LB_Level_10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEFC7E1EC10B0900CCAABB /* LB_Level_10.swift */; };
+		93EEFC8A1EC10B0900CCAABB /* LB_Level_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEFC7F1EC10B0900CCAABB /* LB_Level_2.swift */; };
+		93EEFC8B1EC10B0900CCAABB /* LB_Level_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEFC801EC10B0900CCAABB /* LB_Level_3.swift */; };
+		93EEFC8C1EC10B0900CCAABB /* LB_Level_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEFC811EC10B0900CCAABB /* LB_Level_4.swift */; };
+		93EEFC8D1EC10B0900CCAABB /* LB_Level_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEFC821EC10B0900CCAABB /* LB_Level_5.swift */; };
+		93EEFC8E1EC10B0900CCAABB /* LB_Level_6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEFC831EC10B0900CCAABB /* LB_Level_6.swift */; };
+		93EEFC8F1EC10B0900CCAABB /* LB_Level_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEFC841EC10B0900CCAABB /* LB_Level_7.swift */; };
+		93EEFC901EC10B0900CCAABB /* LB_Level_8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEFC851EC10B0900CCAABB /* LB_Level_8.swift */; };
+		93EEFC911EC10B0900CCAABB /* LB_Level_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEFC861EC10B0900CCAABB /* LB_Level_9.swift */; };
+		93EEFC921EC10B0900CCAABB /* LB_LevelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEFC871EC10B0900CCAABB /* LB_LevelHelper.swift */; };
+		93EEFCA41EC24BC900CCAABB /* LB_LevelSelectScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEFCA31EC24BC900CCAABB /* LB_LevelSelectScene.swift */; };
+		93EEFCAB1EC69B6400CCAABB /* spells.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 93EEFCAA1EC69B6400CCAABB /* spells.atlas */; };
+		93EEFCAF1EC6AC2600CCAABB /* kenvector_future.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93EEFCAD1EC6AC2600CCAABB /* kenvector_future.ttf */; };
+		93EEFCB01EC6AC2600CCAABB /* kenvector_future_thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93EEFCAE1EC6AC2600CCAABB /* kenvector_future_thin.ttf */; };
+		93EEFCB21EC6AC5700CCAABB /* ui.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 93EEFCB11EC6AC5700CCAABB /* ui.atlas */; };
+		93EEFCB41EC6B05A00CCAABB /* LB_LevelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93EEFCB31EC6B05A00CCAABB /* LB_LevelScene.sks */; };
+		968431BA09BD86CA73A5C496 /* libPods-Project LightBringersUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 281C2DB64E1DC853F3909F0D /* libPods-Project LightBringersUITests.a */; };
+		C9BC2F3527FD99F97B556531 /* libPods-Project LightBringersTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB2FB0CFE0AD3B0A88127F1 /* libPods-Project LightBringersTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		170C487C1E32EB660049A069 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 170C48591E32EB660049A069 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 170C48601E32EB660049A069;
+			remoteInfo = "Project LightBringers";
+		};
+		170C48871E32EB660049A069 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 170C48591E32EB660049A069 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 170C48601E32EB660049A069;
+			remoteInfo = "Project LightBringers";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		170C48611E32EB660049A069 /* Project LightBringers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project LightBringers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		170C48641E32EB660049A069 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		170C48681E32EB660049A069 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		170C486C1E32EB660049A069 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		170C486F1E32EB660049A069 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		170C48711E32EB660049A069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		170C48761E32EB660049A069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		170C487B1E32EB660049A069 /* Project LightBringersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project LightBringersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		170C487F1E32EB660049A069 /* Project_LightBringersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_LightBringersTests.swift; sourceTree = "<group>"; };
+		170C48811E32EB660049A069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		170C48861E32EB660049A069 /* Project LightBringersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project LightBringersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		170C488A1E32EB660049A069 /* Project_LightBringersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_LightBringersUITests.swift; sourceTree = "<group>"; };
+		170C488C1E32EB660049A069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		281C2DB64E1DC853F3909F0D /* libPods-Project LightBringersUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Project LightBringersUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5369B5BA5819157EA285C2A5 /* Pods-Project LightBringers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project LightBringers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project LightBringers/Pods-Project LightBringers.release.xcconfig"; sourceTree = "<group>"; };
+		544BE9151559BA97D1F17736 /* Pods-Project LightBringersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project LightBringersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project LightBringersTests/Pods-Project LightBringersTests.release.xcconfig"; sourceTree = "<group>"; };
+		5B90318129279A7FF9DA14B0 /* Pods-Project LightBringersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project LightBringersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project LightBringersUITests/Pods-Project LightBringersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7AB2FB0CFE0AD3B0A88127F1 /* libPods-Project LightBringersTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Project LightBringersTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		930B415C1E8079C800FA301A /* LB_Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_Enemy.swift; sourceTree = "<group>"; };
+		93215CC81E34467900367C44 /* LB_Being.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_Being.swift; sourceTree = "<group>"; };
+		93215CC91E34467900367C44 /* LB_Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_Player.swift; sourceTree = "<group>"; };
+		93215CCA1E34467900367C44 /* LB_PlayerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_PlayerNode.swift; sourceTree = "<group>"; };
+		93215CCC1E34467900367C44 /* LB_BattleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_BattleScene.swift; sourceTree = "<group>"; };
+		93215CCD1E34467900367C44 /* LB_LaunchScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_LaunchScene.swift; sourceTree = "<group>"; };
+		93215CD11E34467900367C44 /* LB_Spell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_Spell.swift; sourceTree = "<group>"; };
+		93215CFE1E36C52000367C44 /* LB_BattleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LB_BattleScene.sks; sourceTree = "<group>"; };
+		93215CFF1E36C52000367C44 /* LB_LaunchScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LB_LaunchScene.sks; sourceTree = "<group>"; };
+		93215E141E39A20100367C44 /* LB_SpellNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_SpellNode.swift; sourceTree = "<group>"; };
+		93215E161E39A9D900367C44 /* LB_SpellSlotNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_SpellSlotNode.swift; sourceTree = "<group>"; };
+		93215E181E39AFE300367C44 /* LB_SpellRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_SpellRing.swift; sourceTree = "<group>"; };
+		93215E1A1E39C30A00367C44 /* LB_SpellRingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_SpellRingController.swift; sourceTree = "<group>"; };
+		933F0CFE1E864C5300657312 /* LB_EnemyNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_EnemyNode.swift; sourceTree = "<group>"; };
+		933FF8451E93574B00BA3D75 /* enemy_fw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy_fw.png; sourceTree = "<group>"; };
+		933FF8481E93574B00BA3D75 /* enemy_iw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy_iw.png; sourceTree = "<group>"; };
+		933FF84B1E93574B00BA3D75 /* enemy_pw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy_pw.png; sourceTree = "<group>"; };
+		933FF8551E93587D00BA3D75 /* enemy_pw_idle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = enemy_pw_idle.atlas; sourceTree = "<group>"; };
+		933FF8591E93596000BA3D75 /* enemy_iw_idle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = enemy_iw_idle.atlas; sourceTree = "<group>"; };
+		933FF85B1E93596700BA3D75 /* enemy_fw_idle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = enemy_fw_idle.atlas; sourceTree = "<group>"; };
+		935587381EC6CD8C00B4AA3B /* spellicon.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = spellicon.atlas; path = Font/spellicon.atlas; sourceTree = "<group>"; };
+		9355873A1ECC1D3500B4AA3B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9355873C1ED7CCFB00B4AA3B /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		9377E93D1E9D7D7F0015287A /* LB_ActionEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_ActionEvent.swift; sourceTree = "<group>"; };
+		9377E9461EA196FB0015287A /* circle2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle2.png; sourceTree = "<group>"; };
+		93813CC91E85BF21000E592F /* LB_Collision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_Collision.swift; sourceTree = "<group>"; };
+		93E51A451E4BE3A30020FAE0 /* Walk.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Walk.atlas; sourceTree = "<group>"; };
+		93EEFC5A1EB2BF7700CCAABB /* LB_Ailment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_Ailment.swift; sourceTree = "<group>"; };
+		93EEFC6A1EB2D92F00CCAABB /* LB_BattleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_BattleManager.swift; sourceTree = "<group>"; };
+		93EEFC6B1EB2D92F00CCAABB /* LB_BattleStateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_BattleStateMachine.swift; sourceTree = "<group>"; };
+		93EEFC7D1EC10B0900CCAABB /* LB_Level_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_Level_1.swift; sourceTree = "<group>"; };
+		93EEFC7E1EC10B0900CCAABB /* LB_Level_10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_Level_10.swift; sourceTree = "<group>"; };
+		93EEFC7F1EC10B0900CCAABB /* LB_Level_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_Level_2.swift; sourceTree = "<group>"; };
+		93EEFC801EC10B0900CCAABB /* LB_Level_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_Level_3.swift; sourceTree = "<group>"; };
+		93EEFC811EC10B0900CCAABB /* LB_Level_4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_Level_4.swift; sourceTree = "<group>"; };
+		93EEFC821EC10B0900CCAABB /* LB_Level_5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_Level_5.swift; sourceTree = "<group>"; };
+		93EEFC831EC10B0900CCAABB /* LB_Level_6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_Level_6.swift; sourceTree = "<group>"; };
+		93EEFC841EC10B0900CCAABB /* LB_Level_7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_Level_7.swift; sourceTree = "<group>"; };
+		93EEFC851EC10B0900CCAABB /* LB_Level_8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_Level_8.swift; sourceTree = "<group>"; };
+		93EEFC861EC10B0900CCAABB /* LB_Level_9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_Level_9.swift; sourceTree = "<group>"; };
+		93EEFC871EC10B0900CCAABB /* LB_LevelHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_LevelHelper.swift; sourceTree = "<group>"; };
+		93EEFCA31EC24BC900CCAABB /* LB_LevelSelectScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LB_LevelSelectScene.swift; sourceTree = "<group>"; };
+		93EEFCAA1EC69B6400CCAABB /* spells.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = spells.atlas; sourceTree = "<group>"; };
+		93EEFCAD1EC6AC2600CCAABB /* kenvector_future.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kenvector_future.ttf; sourceTree = "<group>"; };
+		93EEFCAE1EC6AC2600CCAABB /* kenvector_future_thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kenvector_future_thin.ttf; sourceTree = "<group>"; };
+		93EEFCB11EC6AC5700CCAABB /* ui.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ui.atlas; sourceTree = "<group>"; };
+		93EEFCB31EC6B05A00CCAABB /* LB_LevelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LB_LevelScene.sks; sourceTree = "<group>"; };
+		A23B753B310E453EFBA7D794 /* Pods-Project LightBringers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project LightBringers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project LightBringers/Pods-Project LightBringers.debug.xcconfig"; sourceTree = "<group>"; };
+		A6DBA11D90118C8807481982 /* libPods-Project LightBringers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Project LightBringers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D549E2D607D1BB3DE1B5A51E /* Pods-Project LightBringersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project LightBringersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project LightBringersTests/Pods-Project LightBringersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F44BB46E13CD29F5523DF9E8 /* Pods-Project LightBringersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project LightBringersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project LightBringersUITests/Pods-Project LightBringersUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		170C485E1E32EB660049A069 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA87DA4A08A03117C770B3F /* libPods-Project LightBringers.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		170C48781E32EB660049A069 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9BC2F3527FD99F97B556531 /* libPods-Project LightBringersTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		170C48831E32EB660049A069 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				968431BA09BD86CA73A5C496 /* libPods-Project LightBringersUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		170C48581E32EB660049A069 = {
+			isa = PBXGroup;
+			children = (
+				170C48631E32EB660049A069 /* Project LightBringers */,
+				170C487E1E32EB660049A069 /* Project LightBringersTests */,
+				170C48891E32EB660049A069 /* Project LightBringersUITests */,
+				170C48621E32EB660049A069 /* Products */,
+				E24DA8C138007112DD524D4B /* Pods */,
+				ACF648853BFD0F47E3F3EF1D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		170C48621E32EB660049A069 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				170C48611E32EB660049A069 /* Project LightBringers.app */,
+				170C487B1E32EB660049A069 /* Project LightBringersTests.xctest */,
+				170C48861E32EB660049A069 /* Project LightBringersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		170C48631E32EB660049A069 /* Project LightBringers */ = {
+			isa = PBXGroup;
+			children = (
+				93EEFC7C1EC10B0900CCAABB /* Levels */,
+				93215CFD1E36C52000367C44 /* Scenes */,
+				93215CC61E34467900367C44 /* Classes */,
+				93215CDE1E34469800367C44 /* Assets */,
+				170C48641E32EB660049A069 /* AppDelegate.swift */,
+				170C48681E32EB660049A069 /* Actions.sks */,
+				170C486C1E32EB660049A069 /* GameViewController.swift */,
+				170C486E1E32EB660049A069 /* Main.storyboard */,
+				170C48711E32EB660049A069 /* Assets.xcassets */,
+				9355873A1ECC1D3500B4AA3B /* LaunchScreen.storyboard */,
+				170C48761E32EB660049A069 /* Info.plist */,
+			);
+			path = "Project LightBringers";
+			sourceTree = "<group>";
+		};
+		170C487E1E32EB660049A069 /* Project LightBringersTests */ = {
+			isa = PBXGroup;
+			children = (
+				170C487F1E32EB660049A069 /* Project_LightBringersTests.swift */,
+				170C48811E32EB660049A069 /* Info.plist */,
+			);
+			path = "Project LightBringersTests";
+			sourceTree = "<group>";
+		};
+		170C48891E32EB660049A069 /* Project LightBringersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				170C488A1E32EB660049A069 /* Project_LightBringersUITests.swift */,
+				170C488C1E32EB660049A069 /* Info.plist */,
+			);
+			path = "Project LightBringersUITests";
+			sourceTree = "<group>";
+		};
+		93215CC61E34467900367C44 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				93EEFC691EB2D92F00CCAABB /* Managers */,
+				93215CC71E34467900367C44 /* Being */,
+				93215CCB1E34467900367C44 /* Scene Classes */,
+				93215CCE1E34467900367C44 /* Spell Circle */,
+				93215CD01E34467900367C44 /* Spells */,
+				93813CC91E85BF21000E592F /* LB_Collision.swift */,
+				9377E93D1E9D7D7F0015287A /* LB_ActionEvent.swift */,
+				93EEFC5A1EB2BF7700CCAABB /* LB_Ailment.swift */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		93215CC71E34467900367C44 /* Being */ = {
+			isa = PBXGroup;
+			children = (
+				93215CC81E34467900367C44 /* LB_Being.swift */,
+				93215CCA1E34467900367C44 /* LB_PlayerNode.swift */,
+				93215CC91E34467900367C44 /* LB_Player.swift */,
+				930B415C1E8079C800FA301A /* LB_Enemy.swift */,
+				933F0CFE1E864C5300657312 /* LB_EnemyNode.swift */,
+			);
+			path = Being;
+			sourceTree = "<group>";
+		};
+		93215CCB1E34467900367C44 /* Scene Classes */ = {
+			isa = PBXGroup;
+			children = (
+				93215CCC1E34467900367C44 /* LB_BattleScene.swift */,
+				93215CCD1E34467900367C44 /* LB_LaunchScene.swift */,
+				93EEFCA31EC24BC900CCAABB /* LB_LevelSelectScene.swift */,
+			);
+			path = "Scene Classes";
+			sourceTree = "<group>";
+		};
+		93215CCE1E34467900367C44 /* Spell Circle */ = {
+			isa = PBXGroup;
+			children = (
+				93215E161E39A9D900367C44 /* LB_SpellSlotNode.swift */,
+				93215E181E39AFE300367C44 /* LB_SpellRing.swift */,
+				93215E1A1E39C30A00367C44 /* LB_SpellRingController.swift */,
+			);
+			path = "Spell Circle";
+			sourceTree = "<group>";
+		};
+		93215CD01E34467900367C44 /* Spells */ = {
+			isa = PBXGroup;
+			children = (
+				93215CD11E34467900367C44 /* LB_Spell.swift */,
+				93215E141E39A20100367C44 /* LB_SpellNode.swift */,
+			);
+			path = Spells;
+			sourceTree = "<group>";
+		};
+		93215CDE1E34469800367C44 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9355873C1ED7CCFB00B4AA3B /* background.png */,
+				93EEFCB11EC6AC5700CCAABB /* ui.atlas */,
+				93EEFCAC1EC6AC2600CCAABB /* Font */,
+				935587381EC6CD8C00B4AA3B /* spellicon.atlas */,
+				93EEFCAA1EC69B6400CCAABB /* spells.atlas */,
+				9377E9451EA196BE0015287A /* Spell ring */,
+				933FF8431E93574B00BA3D75 /* Enemy */,
+				9352671D1E452EE000073011 /* Character */,
+			);
+			name = Assets;
+			path = ../Assets;
+			sourceTree = "<group>";
+		};
+		93215CFD1E36C52000367C44 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				93215CFE1E36C52000367C44 /* LB_BattleScene.sks */,
+				93EEFCB31EC6B05A00CCAABB /* LB_LevelScene.sks */,
+				93215CFF1E36C52000367C44 /* LB_LaunchScene.sks */,
+			);
+			name = Scenes;
+			path = ../Scenes;
+			sourceTree = "<group>";
+		};
+		933FF8431E93574B00BA3D75 /* Enemy */ = {
+			isa = PBXGroup;
+			children = (
+				933FF8441E93574B00BA3D75 /* FW */,
+				933FF8471E93574B00BA3D75 /* IW */,
+				933FF84A1E93574B00BA3D75 /* PW */,
+			);
+			path = Enemy;
+			sourceTree = "<group>";
+		};
+		933FF8441E93574B00BA3D75 /* FW */ = {
+			isa = PBXGroup;
+			children = (
+				933FF8451E93574B00BA3D75 /* enemy_fw.png */,
+				933FF85B1E93596700BA3D75 /* enemy_fw_idle.atlas */,
+			);
+			path = FW;
+			sourceTree = "<group>";
+		};
+		933FF8471E93574B00BA3D75 /* IW */ = {
+			isa = PBXGroup;
+			children = (
+				933FF8481E93574B00BA3D75 /* enemy_iw.png */,
+				933FF8591E93596000BA3D75 /* enemy_iw_idle.atlas */,
+			);
+			path = IW;
+			sourceTree = "<group>";
+		};
+		933FF84A1E93574B00BA3D75 /* PW */ = {
+			isa = PBXGroup;
+			children = (
+				933FF84B1E93574B00BA3D75 /* enemy_pw.png */,
+				933FF8551E93587D00BA3D75 /* enemy_pw_idle.atlas */,
+			);
+			path = PW;
+			sourceTree = "<group>";
+		};
+		9352671D1E452EE000073011 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				93E51A451E4BE3A30020FAE0 /* Walk.atlas */,
+			);
+			name = Character;
+			sourceTree = "<group>";
+		};
+		9377E9451EA196BE0015287A /* Spell ring */ = {
+			isa = PBXGroup;
+			children = (
+				9377E9461EA196FB0015287A /* circle2.png */,
+			);
+			path = "Spell ring";
+			sourceTree = "<group>";
+		};
+		93EEFC691EB2D92F00CCAABB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				93EEFC6A1EB2D92F00CCAABB /* LB_BattleManager.swift */,
+				93EEFC6B1EB2D92F00CCAABB /* LB_BattleStateMachine.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		93EEFC7C1EC10B0900CCAABB /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				93EEFC7D1EC10B0900CCAABB /* LB_Level_1.swift */,
+				93EEFC7F1EC10B0900CCAABB /* LB_Level_2.swift */,
+				93EEFC801EC10B0900CCAABB /* LB_Level_3.swift */,
+				93EEFC811EC10B0900CCAABB /* LB_Level_4.swift */,
+				93EEFC821EC10B0900CCAABB /* LB_Level_5.swift */,
+				93EEFC831EC10B0900CCAABB /* LB_Level_6.swift */,
+				93EEFC841EC10B0900CCAABB /* LB_Level_7.swift */,
+				93EEFC851EC10B0900CCAABB /* LB_Level_8.swift */,
+				93EEFC861EC10B0900CCAABB /* LB_Level_9.swift */,
+				93EEFC7E1EC10B0900CCAABB /* LB_Level_10.swift */,
+				93EEFC871EC10B0900CCAABB /* LB_LevelHelper.swift */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		93EEFCAC1EC6AC2600CCAABB /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				93EEFCAD1EC6AC2600CCAABB /* kenvector_future.ttf */,
+				93EEFCAE1EC6AC2600CCAABB /* kenvector_future_thin.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		ACF648853BFD0F47E3F3EF1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6DBA11D90118C8807481982 /* libPods-Project LightBringers.a */,
+				7AB2FB0CFE0AD3B0A88127F1 /* libPods-Project LightBringersTests.a */,
+				281C2DB64E1DC853F3909F0D /* libPods-Project LightBringersUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E24DA8C138007112DD524D4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A23B753B310E453EFBA7D794 /* Pods-Project LightBringers.debug.xcconfig */,
+				5369B5BA5819157EA285C2A5 /* Pods-Project LightBringers.release.xcconfig */,
+				D549E2D607D1BB3DE1B5A51E /* Pods-Project LightBringersTests.debug.xcconfig */,
+				544BE9151559BA97D1F17736 /* Pods-Project LightBringersTests.release.xcconfig */,
+				F44BB46E13CD29F5523DF9E8 /* Pods-Project LightBringersUITests.debug.xcconfig */,
+				5B90318129279A7FF9DA14B0 /* Pods-Project LightBringersUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		170C48601E32EB660049A069 /* Project LightBringers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 170C488F1E32EB660049A069 /* Build configuration list for PBXNativeTarget "Project LightBringers" */;
+			buildPhases = (
+				0B6E425E3565173BD23232A1 /* [CP] Check Pods Manifest.lock */,
+				170C485D1E32EB660049A069 /* Sources */,
+				170C485E1E32EB660049A069 /* Frameworks */,
+				170C485F1E32EB660049A069 /* Resources */,
+				1EB53249DA5F48E2D6729324 /* [CP] Embed Pods Frameworks */,
+				54DCFA981988F422A582B31F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project LightBringers";
+			productName = "Project LightBringers";
+			productReference = 170C48611E32EB660049A069 /* Project LightBringers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		170C487A1E32EB660049A069 /* Project LightBringersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 170C48921E32EB660049A069 /* Build configuration list for PBXNativeTarget "Project LightBringersTests" */;
+			buildPhases = (
+				76916C50BA3E3BBEF9A61461 /* [CP] Check Pods Manifest.lock */,
+				170C48771E32EB660049A069 /* Sources */,
+				170C48781E32EB660049A069 /* Frameworks */,
+				170C48791E32EB660049A069 /* Resources */,
+				01FF044574F696BC600EDF2A /* [CP] Embed Pods Frameworks */,
+				C56E6E3374ADF747B5D7FB3D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				170C487D1E32EB660049A069 /* PBXTargetDependency */,
+			);
+			name = "Project LightBringersTests";
+			productName = "Project LightBringersTests";
+			productReference = 170C487B1E32EB660049A069 /* Project LightBringersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		170C48851E32EB660049A069 /* Project LightBringersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 170C48951E32EB660049A069 /* Build configuration list for PBXNativeTarget "Project LightBringersUITests" */;
+			buildPhases = (
+				30B5BF24BFE172317361D1DF /* [CP] Check Pods Manifest.lock */,
+				170C48821E32EB660049A069 /* Sources */,
+				170C48831E32EB660049A069 /* Frameworks */,
+				170C48841E32EB660049A069 /* Resources */,
+				728C4C507E132D018E182B41 /* [CP] Embed Pods Frameworks */,
+				BD363CAB27ABF4021E6A2401 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				170C48881E32EB660049A069 /* PBXTargetDependency */,
+			);
+			name = "Project LightBringersUITests";
+			productName = "Project LightBringersUITests";
+			productReference = 170C48861E32EB660049A069 /* Project LightBringersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		170C48591E32EB660049A069 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Team K";
+				TargetAttributes = {
+					170C48601E32EB660049A069 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9T8454TFH2;
+						ProvisioningStyle = Automatic;
+					};
+					170C487A1E32EB660049A069 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = D684833V59;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 170C48601E32EB660049A069;
+					};
+					170C48851E32EB660049A069 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = D684833V59;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 170C48601E32EB660049A069;
+					};
+				};
+			};
+			buildConfigurationList = 170C485C1E32EB660049A069 /* Build configuration list for PBXProject "Project LightBringers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 170C48581E32EB660049A069;
+			productRefGroup = 170C48621E32EB660049A069 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				170C48601E32EB660049A069 /* Project LightBringers */,
+				170C487A1E32EB660049A069 /* Project LightBringersTests */,
+				170C48851E32EB660049A069 /* Project LightBringersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		170C485F1E32EB660049A069 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EEFCB41EC6B05A00CCAABB /* LB_LevelScene.sks in Resources */,
+				933FF8561E93587D00BA3D75 /* enemy_pw_idle.atlas in Resources */,
+				170C48701E32EB660049A069 /* Main.storyboard in Resources */,
+				935587391EC6CD8C00B4AA3B /* spellicon.atlas in Resources */,
+				933FF85A1E93596000BA3D75 /* enemy_iw_idle.atlas in Resources */,
+				933FF84D1E93574B00BA3D75 /* enemy_fw.png in Resources */,
+				9355873B1ECC1D3500B4AA3B /* LaunchScreen.storyboard in Resources */,
+				93215D001E36C52000367C44 /* LB_BattleScene.sks in Resources */,
+				93EEFCAF1EC6AC2600CCAABB /* kenvector_future.ttf in Resources */,
+				933FF8511E93574B00BA3D75 /* enemy_pw.png in Resources */,
+				933FF85C1E93596700BA3D75 /* enemy_fw_idle.atlas in Resources */,
+				933FF84F1E93574B00BA3D75 /* enemy_iw.png in Resources */,
+				93EEFCB21EC6AC5700CCAABB /* ui.atlas in Resources */,
+				9377E9471EA196FB0015287A /* circle2.png in Resources */,
+				93E51A461E4BE3A30020FAE0 /* Walk.atlas in Resources */,
+				170C48721E32EB660049A069 /* Assets.xcassets in Resources */,
+				9355873D1ED7CCFB00B4AA3B /* background.png in Resources */,
+				93215D011E36C52000367C44 /* LB_LaunchScene.sks in Resources */,
+				93EEFCAB1EC69B6400CCAABB /* spells.atlas in Resources */,
+				93EEFCB01EC6AC2600CCAABB /* kenvector_future_thin.ttf in Resources */,
+				170C48691E32EB660049A069 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		170C48791E32EB660049A069 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		170C48841E32EB660049A069 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01FF044574F696BC600EDF2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project LightBringersTests/Pods-Project LightBringersTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B6E425E3565173BD23232A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1EB53249DA5F48E2D6729324 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project LightBringers/Pods-Project LightBringers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30B5BF24BFE172317361D1DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		54DCFA981988F422A582B31F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project LightBringers/Pods-Project LightBringers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		728C4C507E132D018E182B41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project LightBringersUITests/Pods-Project LightBringersUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76916C50BA3E3BBEF9A61461 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BD363CAB27ABF4021E6A2401 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project LightBringersUITests/Pods-Project LightBringersUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C56E6E3374ADF747B5D7FB3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project LightBringersTests/Pods-Project LightBringersTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		170C485D1E32EB660049A069 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93215CD81E34467900367C44 /* LB_Spell.swift in Sources */,
+				93EEFC5B1EB2BF7700CCAABB /* LB_Ailment.swift in Sources */,
+				93215E1B1E39C30A00367C44 /* LB_SpellRingController.swift in Sources */,
+				93EEFC8C1EC10B0900CCAABB /* LB_Level_4.swift in Sources */,
+				93EEFC8A1EC10B0900CCAABB /* LB_Level_2.swift in Sources */,
+				9377E93E1E9D7D7F0015287A /* LB_ActionEvent.swift in Sources */,
+				170C486D1E32EB660049A069 /* GameViewController.swift in Sources */,
+				93EEFC8D1EC10B0900CCAABB /* LB_Level_5.swift in Sources */,
+				93EEFC8B1EC10B0900CCAABB /* LB_Level_3.swift in Sources */,
+				93EEFC8E1EC10B0900CCAABB /* LB_Level_6.swift in Sources */,
+				93215CD41E34467900367C44 /* LB_PlayerNode.swift in Sources */,
+				93813CCA1E85BF21000E592F /* LB_Collision.swift in Sources */,
+				933F0CFF1E864C5300657312 /* LB_EnemyNode.swift in Sources */,
+				93EEFC881EC10B0900CCAABB /* LB_Level_1.swift in Sources */,
+				170C48651E32EB660049A069 /* AppDelegate.swift in Sources */,
+				93EEFC901EC10B0900CCAABB /* LB_Level_8.swift in Sources */,
+				93EEFC8F1EC10B0900CCAABB /* LB_Level_7.swift in Sources */,
+				93215CD31E34467900367C44 /* LB_Player.swift in Sources */,
+				930B415D1E8079C800FA301A /* LB_Enemy.swift in Sources */,
+				93215CD61E34467900367C44 /* LB_LaunchScene.swift in Sources */,
+				93EEFC921EC10B0900CCAABB /* LB_LevelHelper.swift in Sources */,
+				93EEFC911EC10B0900CCAABB /* LB_Level_9.swift in Sources */,
+				93215CD51E34467900367C44 /* LB_BattleScene.swift in Sources */,
+				93215E151E39A20100367C44 /* LB_SpellNode.swift in Sources */,
+				93215E171E39A9D900367C44 /* LB_SpellSlotNode.swift in Sources */,
+				93EEFCA41EC24BC900CCAABB /* LB_LevelSelectScene.swift in Sources */,
+				93EEFC6D1EB2D92F00CCAABB /* LB_BattleStateMachine.swift in Sources */,
+				93215E191E39AFE300367C44 /* LB_SpellRing.swift in Sources */,
+				93EEFC891EC10B0900CCAABB /* LB_Level_10.swift in Sources */,
+				93215CD21E34467900367C44 /* LB_Being.swift in Sources */,
+				93EEFC6C1EB2D92F00CCAABB /* LB_BattleManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		170C48771E32EB660049A069 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				170C48801E32EB660049A069 /* Project_LightBringersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		170C48821E32EB660049A069 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				170C488B1E32EB660049A069 /* Project_LightBringersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		170C487D1E32EB660049A069 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 170C48601E32EB660049A069 /* Project LightBringers */;
+			targetProxy = 170C487C1E32EB660049A069 /* PBXContainerItemProxy */;
+		};
+		170C48881E32EB660049A069 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 170C48601E32EB660049A069 /* Project LightBringers */;
+			targetProxy = 170C48871E32EB660049A069 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		170C486E1E32EB660049A069 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				170C486F1E32EB660049A069 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		170C488D1E32EB660049A069 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		170C488E1E32EB660049A069 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		170C48901E32EB660049A069 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A23B753B310E453EFBA7D794 /* Pods-Project LightBringers.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9T8454TFH2;
+				INFOPLIST_FILE = "Project LightBringers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.k.Project-LightBringers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		170C48911E32EB660049A069 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5369B5BA5819157EA285C2A5 /* Pods-Project LightBringers.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9T8454TFH2;
+				INFOPLIST_FILE = "Project LightBringers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.k.Project-LightBringers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		170C48931E32EB660049A069 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D549E2D607D1BB3DE1B5A51E /* Pods-Project LightBringersTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D684833V59;
+				INFOPLIST_FILE = "Project LightBringersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.k.Project-LightBringersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project LightBringers.app/Project LightBringers";
+			};
+			name = Debug;
+		};
+		170C48941E32EB660049A069 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 544BE9151559BA97D1F17736 /* Pods-Project LightBringersTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D684833V59;
+				INFOPLIST_FILE = "Project LightBringersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.k.Project-LightBringersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project LightBringers.app/Project LightBringers";
+			};
+			name = Release;
+		};
+		170C48961E32EB660049A069 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F44BB46E13CD29F5523DF9E8 /* Pods-Project LightBringersUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = D684833V59;
+				INFOPLIST_FILE = "Project LightBringersUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.k.Project-LightBringersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Project LightBringers";
+			};
+			name = Debug;
+		};
+		170C48971E32EB660049A069 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B90318129279A7FF9DA14B0 /* Pods-Project LightBringersUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = D684833V59;
+				INFOPLIST_FILE = "Project LightBringersUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.k.Project-LightBringersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Project LightBringers";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		170C485C1E32EB660049A069 /* Build configuration list for PBXProject "Project LightBringers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				170C488D1E32EB660049A069 /* Debug */,
+				170C488E1E32EB660049A069 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		170C488F1E32EB660049A069 /* Build configuration list for PBXNativeTarget "Project LightBringers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				170C48901E32EB660049A069 /* Debug */,
+				170C48911E32EB660049A069 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		170C48921E32EB660049A069 /* Build configuration list for PBXNativeTarget "Project LightBringersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				170C48931E32EB660049A069 /* Debug */,
+				170C48941E32EB660049A069 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		170C48951E32EB660049A069 /* Build configuration list for PBXNativeTarget "Project LightBringersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				170C48961E32EB660049A069 /* Debug */,
+				170C48971E32EB660049A069 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 170C48591E32EB660049A069 /* Project object */;
+}
